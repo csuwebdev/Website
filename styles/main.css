@@ -27,7 +27,13 @@ p {
 	font: 100% calibri, sans-serif;
     color: #00B25C;
 }
+li {
+    color: #FFFFFF;
+}
 /*****Generic Classes*****/  
+.NavHeader{
+    color: #111111;
+}
 .TopNavButton{
 	width: 100px;
 	height: 25px;
@@ -59,12 +65,12 @@ p {
     background: #BF3030;
 }
 .PostHeader{
-    color: #FFFFFF;
+    color: #111111;
     font: 130% verdana, serif;
 }
 .Post{
     position: relative;
-
+    border: 1px solid black;
     margin: 20px 10px;
     background:  #BF3030;
     -moz-border-radius: 5px;
@@ -109,6 +115,7 @@ p {
 	background: #ebebeb;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    border: 1px solid black;
 }
 .MediaIcon{
     position: absolute;
@@ -134,8 +141,9 @@ p {
     bottom: 70px;
     min-height: 300px;
     min-width: 300px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
 }
 #contentContainer{
     position: absolute;
@@ -147,9 +155,11 @@ p {
 #rightContent{
     right: 0%;
     width: 35%;
+    border: 1px solid black;
 }
 #leftContent{
     width: 55%;
+    border: 1px solid black;
 }
 #postThree{
     top: 60%;
