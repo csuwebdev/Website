@@ -1,0 +1,134 @@
+/*****Reset*****/  
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,  
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; } 
+
+/*****Basic Elements*****/  
+h1{
+	font: 170% verdana, serif;
+	color: #03426A;
+}
+h3{
+	font: 130% verdana, serif;
+	color: #03426A;
+    text-align: center;
+}
+ul {
+	opacity: .8;
+}
+ol {
+}
+a {
+}
+p {
+	font: 100% calibri, sans-serif;
+    color: 00B25C;
+    text-align: center;
+}
+/*****Generic Classes*****/  
+.TopNavButton{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 10px 20px 10px 0px;
+	border-right: 2px solid black;
+	background: #3E97D1;
+	color: #03426A;
+}
+.BodyContent {
+    min-width: 125px;
+    min-height: 125px;
+    max-width: 250px;
+    max-height: 250px;
+	position: absolute;
+	background: #3E97D1;
+	width: 30%;
+	height: 35%;
+}
+.AsideNavButton {
+    display: block;
+}
+/*****Basic Layout*****/  
+#wrap{
+    min-width: 700px;
+}
+/*****Header*****/  
+#topNav{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 50px;
+    min-width: 800px;
+	background: #0A67A3;
+}
+#topHeader{
+	display: inline;
+}
+#navOne{
+}
+#navTwo{
+}
+#navThree{
+}
+#navFour{
+}
+#navFive{
+}
+/*****Content*****/  
+#body{
+    position: absolute;
+	top: 70px;
+    right: 5%;
+	left: 30%;
+    bottom: 80px;
+	background: #F8F8F8;
+    min-height: 400px;
+    min-width: 300px;
+}
+#leftAside{
+	position: absolute;
+	left: 5%;
+	top: 70px;
+	bottom: 80px;
+	width: 15%;
+    min-width: 100px;
+    min-height: 400px;
+	background: #EBEBEB;	
+}
+#contentContainer{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 5%;
+}
+#postOne{
+    top: 5%;
+    left: 5%;
+}
+#postTwo{
+    left: 60%;
+    top: 5%;
+}
+#postThree{
+    top: 60%;
+    left: 5%;
+}
+#postFour{
+    left: 60%;
+    top: 60%;
+}
+/*****Footer*****/  
+footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 40px;
+	background: #0A67A3;
+}
+#contactInfo{
+	margin: 5px 20px;
+	width: 300px;
+	background: #3E97D1;
+	color: #03426A;
+}
