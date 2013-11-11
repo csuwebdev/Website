@@ -4,16 +4,18 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
 /*****Basic Elements*****/  
 h1{
-	font: 170% arial black, serif;
-	color: #FFFFFF;
-}
-h2{
-    color: #FFFFFF;
+	font: 170% verdana, serif;
+	color: #444444;
 }
 h3{
-    margin-left: 5px;
-	font: 130% arial black, serif;
-	color: #A60000;
+	font: 130% Verdana, serif;
+	color: #444444;
+    text-align: center;
+}
+p{
+    color: #FFBBBB;
+    text-align: center;
+    font: 100% arial;
 }
 ul {
     padding-left: 20px;
@@ -32,18 +34,14 @@ p {
 /*****Generic Classes*****/  
 .NavHeader{
     color: #FFFFFF;
-    font: verdana;
+    font-size: 15px;
 }
 .TopNavButton{
-	width: 100px;
-	height: 25px;
+	width: 90px;
+	height: 30px;
 	float: right;
-	margin: 10px 20px 10px 0px;
-	border-right: 2px solid black;
-	background: #EE3030;
-    text-align: center;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    
+	margin: 5px 0px 0px 0px;
 }
 .BodyContent {
 	position: absolute;
@@ -66,7 +64,7 @@ p {
 }
 .PostHeader{
     color: #FFFFFF;
-    font: 130% verdana, serif;
+    font: 130% impact, serif;
 }
 .Post{
     position: relative;
@@ -97,15 +95,17 @@ p {
 	top: 0px;
 	right: 0px;
 	left: 0px;
-	height: 45px;
-    min-width: 800px;
+	height: 30px;
 	background: #BF3030;
-    border-bottom: solid grey 3px;
+    min-width: 450px;
 }
-
-#topHeader{
-	display: inline;
-    
+.Header{
+	float: left;
+    color: #FFFFFF;
+    position: absolute;
+    top:0;
+    left: 0;
+    font: 130% impact;
 }
 #navOne{
 }
@@ -122,7 +122,7 @@ p {
 #leftAside{
 	position: absolute;
 	left: 5%;
-	top: 70px;
+	top: 50px;
 	bottom: 70px;
 	width: 25%;
     min-width: 160px;
@@ -152,7 +152,7 @@ p {
 }
 .MediaIcon{
     position: absolute;
-    top: 40px;
+    top: 25px;
 }
 #mediaIconOne{
     right: 0px;
@@ -168,20 +168,12 @@ p {
 }
 #body{
     position: absolute;
-	top: 70px;
+	top: 50px;
     right: 5%;
-    width: 65%;
-    bottom: 70px;
+    width: 60%;
+    bottom: 50px;
     min-height: 300px;
     min-width: 300px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-#contentContainer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
@@ -224,11 +216,11 @@ p {
 }
 /*****Footer*****/  
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	height: 50px;
+	height: 30px;
 	background: #BF3030;
 }
 footer h1 {

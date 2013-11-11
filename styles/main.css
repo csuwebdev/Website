@@ -17,7 +17,16 @@ p{
     text-align: center;
     font: 100% arial;
 }
+li{
+    margin-left: 40px;
+    color: #FFBBBB;
+    text-align: left;
+    font: 100% arial;
+}
 /*****Generic Classes*****/  
+/* http://jamiewilson.io/norwester/ */
+/* http://subtlepatterns.com/squairy/ */
+/* http://subtlepatterns.com/graphy/ */
 .TopNavButton{
 	width: 90px;
 	height: 30px;
@@ -26,6 +35,7 @@ p{
 }
 .NavHeader{
     color: #FFFFFF;
+    font-size: 15px;
 }
 .BodyContent {
     min-width: 125px;
@@ -34,8 +44,8 @@ p{
     max-height: 250px;
 	position: absolute;
 	background: #CF4242;
-	width: 30%;
-	height: 35%;
+	width: 35%;
+	height: 40%;
     text-align: center;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -52,6 +62,9 @@ p{
      font: 100% impact;
 }
 /*****Basic Layout*****/  
+body{
+background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squairy_light.png');
+}
 #wrap{
     min-width: 700px;
 }
@@ -73,15 +86,43 @@ p{
     left: 0;
     font: 130% impact;
 }
+.sec-top {
+  height: 100%;
+  width: 100%;
+  /* background: white; */
+  background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squairy_light.png');
+  padding-top: 30px;
+  text-align: center;
+}
+.inner1 {
+  font-family: 'NorwesterRegular';
+  color: #960000;
+  font-size: 200px;
+  /* font-weight: bold; */  
+  text-shadow: hsl(0,0%,75%) -1px -1px, hsl(0,0%,75%) -2px -2px, hsl(0,0%,75%) -3px -3px, hsl(0,0%,75%) -4px -4px, hsl(0,0%,75%) -5px -5px, hsl(0,0%,75%) -6px -6px, hsl(0,0%,75%) -7px -7px, hsl(0,0%,75%) -8px -8px, hsl(0,0%,75%) -9px -9px, hsl(0,0%,75%) -10px -10px;
+}
+@font-face {
+  font-family: 'NorwesterRegular';
+    src: url('https://dl.dropboxusercontent.com/s/r2buekkk2a0qk87/norwester.eot');
+    src: url('https://dl.dropboxusercontent.com/s/r2buekkk2a0qk87/norwester.eot') format('embedded-opentype'),
+         url('https://dl.dropboxusercontent.com/s/mp1wlib365iql5q/norwester.woff') format('woff'),
+         url('https://dl.dropboxusercontent.com/s/682cmhu5dbut5v6/norwester.ttf') format('truetype'),
+         url('https://dl.dropboxusercontent.com/s/82s66wchm4az7i8/norwester.svg#NorwesterRegular') format('svg');
+}
+
+.inner2 {
+  font-family: 'NorwesterRegular';
+  color: #666;
+  font-size: 25px;  
+}
 /*****Content*****/  
 #body{
     position: absolute;
-	top: 50px;
+	top: 270px;
     right: 20px;
 	left: 20px;
     bottom: 50px;
-	background: #F8F8F8;
-    min-height: 450px;
+    min-height: 360px;
     min-width: 400px;
     -moz-border-radius: 15px;
     border-radius: 15px;
