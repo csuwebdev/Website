@@ -44,6 +44,7 @@ li{
     max-height: 250px;
 	position: absolute;
 	background: #CF4242;
+    overflow: auto;
 	width: 35%;
 	height: 40%;
     text-align: center;
@@ -91,10 +92,11 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
   width: 100%;
   /* background: white; */
   background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squairy_light.png');
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
 }
 .inner1 {
+
   font-family: 'NorwesterRegular';
   color: #960000;
   font-size: 200px;
@@ -112,7 +114,7 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 
 .inner2 {
   font-family: 'NorwesterRegular';
-  color: #666;
+  color: #444;
   font-size: 25px;  
 }
 /*****Content*****/  
@@ -123,7 +125,7 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 	left: 20px;
     bottom: 50px;
     min-height: 360px;
-    min-width: 400px;
+    min-width: 660px;
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
