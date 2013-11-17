@@ -13,5 +13,7 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
-/tmp
-!/tmp/restart.txt
+/tmp/cache
+/tmp/pids
+/tmp/sessions
+/tmp/sockets
