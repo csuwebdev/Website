@@ -27,6 +27,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# To remove the error:  Could not find a JavaScript runtime.
 gem 'therubyracer', :platforms => :ruby
 
 group :doc do
