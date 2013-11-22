@@ -18,7 +18,7 @@ $(document).ready(function(){
             $('#topHeader').hide();
             $('.BodyHeader').fitText(3.1);
             $('.PostHeader').fitText(.6);
-            $('p').fitText(.9);
+            $('p').fitText();
         }
         else {
             $('#topHeader').show();
