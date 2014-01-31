@@ -17,16 +17,14 @@ $(document).ready(function(){
         if ( $(window).width() < 500 ) {
             $('#topHeader').hide();
             $('.BodyHeader').fitText(3.1);
-            $('.PostHeader').fitText(.6);
-            $('p').fitText(.9);
-            $('ul').fitText(1);
+            $('.PostHeader').fitText(2);
+            $('ul').fitText(3);
         }
         else {
             $('#topHeader').show();
             $('.BodyHeader').fitText(3.1);
-            $('.PostHeader').fitText(.8);
-            $('p').fitText(1.2);           
-            $('ul').fitText(1.8);
+            $('.PostHeader').fitText(2);
+            $('ul').fitText(4);
         }
 
     }

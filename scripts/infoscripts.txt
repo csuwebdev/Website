@@ -18,15 +18,13 @@ $(document).ready(function(){
             $('#topHeader').hide();
             $('.BodyHeader').fitText(3.1);
             $('.PostHeader').fitText(.6);
-            $('p').fitText(.9);
-            $('ul').fitText(1);
+            $('ul').fitText(.9);
         }
         else {
             $('#topHeader').show();
             $('.BodyHeader').fitText(3.1);
             $('.PostHeader').fitText(.8);
-            $('p').fitText(1.2);           
-            $('ul').fitText(1.8);
+            $('ul').fitText(1.2);
         }
 
     }
