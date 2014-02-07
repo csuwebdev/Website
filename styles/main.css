@@ -3,12 +3,19 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
 pre, form, fieldset, table, th, td { margin: 0; padding: 0; } 
 
 /*****Basic Elements*****/  
+@import url(http://fonts.googleapis.com/css?family=Ceviche+One);
 h1{
-	font: 170% verdana, serif;
+	font: 170% 'Fenix', serif;
 	color: #444444;
+    
 }
 h3{
-	font: 130% verdana, serif;
+	font: 130% 'Fenix', serif;
+	color: #444444;
+    text-align: center;
+}
+h4{
+    font: 100% 'Fenix', serif;
 	color: #444444;
     text-align: center;
 }
@@ -23,10 +30,20 @@ li{
     text-align: left;
     font: 100% arial;
 }
+a{
+    text-decoration: none;
+    color: #A0200E;
+    font-family: 'Ceviche One', cursive;
+    font-weight: bold;
+    font-size: 120%;
+}
+a:hover{
+    color: #AAAAAA;
+}
+a:active{
+    color: #000000;
+}
 /*****Generic Classes*****/  
-/* http://jamiewilson.io/norwester/ */
-/* http://subtlepatterns.com/squairy/ */
-/* http://subtlepatterns.com/graphy/ */
 .TopNavButton{
 	width: 90px;
 	height: 30px;
@@ -36,12 +53,12 @@ li{
 .NavHeader{
     color: #FFFFFF;
     font-size: 15px;
+    font-family: Verdana;
 }
 .BodyContent {
+    box-sizing: border-box;
     min-width: 125px;
     min-height: 125px;
-    max-width: 550px;
-    max-height: 250px;
 	position: absolute;
 	background: #CF4242;
     overflow: auto;
@@ -50,24 +67,34 @@ li{
     text-align: center;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    padding: 5px;
 }
 .AsideNavButton {
     display: block;
 }
 .BodyHeader{
     text-align: center;
-    font: 100% arial black;
+    font-family: 'Fenix', serif;
 }
 .PostHeader{
     color: #555555;
-     font: 100% impact;
+    font-family: 'Fenix', serif;
 }
 /*****Basic Layout*****/  
 body{
 background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squairy_light.png');
 }
 #wrap{
-    min-width: 700px;
+    min-width: 400px;
+}
+.TopNavButton:hover{
+    opacity: .5;
+}
+.NavHeader:active{
+    color: #000000;
+}
+.BodyLink:hover{
+    opacity: .5;
 }
 /*****Header*****/  
 #topNav{
@@ -77,7 +104,7 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 	left: 0px;
 	height: 30px;
 	background: #BF3030;
-    min-width: 450px;
+    min-width: 550px;
 }
 .Header{
 	float: left;
@@ -95,15 +122,16 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 	left: 20px;
     bottom: 50px;
     min-height: 360px;
-    min-width: 660px;
+    min-width: 350px;
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
 #contentContainer{
     position: absolute;
     width: 80%;
-    height: 80%;
+    height: 100%;
     left: 5%;
+    overflow: auto;
 }
 #postOne{
     top: 5%;

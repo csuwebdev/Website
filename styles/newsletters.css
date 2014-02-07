@@ -1,9 +1,3 @@
-li{
-    margin-left: 40px;
-    color: #FFBBBB;
-    text-align: left;
-    font: 100% arial;
-}
 /*****Generic Classes*****/  
 /* http://jamiewilson.io/norwester/ */
 /* http://subtlepatterns.com/squairy/ */
@@ -21,22 +15,17 @@ li{
 .BodyContent {
     min-width: 125px;
     min-height: 125px;
-    max-width: 550px;
-    max-height: 250px;
 	position: absolute;
 	background: #CF4242;
     overflow: auto;
-	width: 35%;
-	height: 40%;
     text-align: center;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    height: 100%;
+    bottom: 5%;
 }
 .AsideNavButton {
     display: block;
-}
-.BodyHeader{
-    text-align: center;
 }
 .PostHeader{
     color: #555555;
@@ -55,48 +44,42 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
     font: 130% impact;
 }
 /*****Content*****/  
-.BodyContent {
-    min-width: 125px;
-    min-height: 125px;
-    max-width: 550px;
-    max-height: 250px;
-	position: absolute;
-	background: #CF4242;
-    overflow: auto;
-	width: 35%;
-	height: 40%;
-    text-align: center;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-}
-.AsideNavButton {
-    display: block;
-}
-/*****Basic Layout*****/  
-
-/*****Content*****/  
 #body{
     position: absolute;
 	top: 70px;
-    right: 5%;
-	left: 30%;
-    bottom: 100px;
-    padding: 5px;
-	background: #DDDDDD;
-    min-height: 390px;
+    right: 20px;
+	left: 20px;
+    bottom: 50px;
+    min-height: 360px;
     min-width: 350px;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    background: #DDDDDD;
+}
+#postOne{
+    top: 5%;
+    left: 35%;
+    right: 5%;
+    bottom: 0%;
+    width: 60%;
+    height: 90%;
+    padding: 5px;
+    overflow: auto;
+}
+#postOne ul{
+    text-align: center;
+    list-style-position: inside;
 }
 #leftAside{
 	position: absolute;
 	left: 5%;
-	top: 70px;
-	bottom: 100px;
+	top: 5%;
+	bottom: 0%;
 	width: 20%;
+    height:90%;
     min-width: 100px;
     min-height: 300px;
-	background: #DDDDDD;	
+	background: #CF4242;	
     -moz-border-radius: 15px;
     border-radius: 15px;
     overflow: auto;
@@ -106,28 +89,6 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
     font-size: 80%;
     margin-left: 10px; 
     list-style: none;
-}
-#contentContainer{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    left: 5%;
-}
-#postOne{
-    top: 5%;
-    left: 5%;
-}
-#postTwo{
-    left: 60%;
-    top: 5%;
-}
-#postThree{
-    top: 60%;
-    left: 5%;
-}
-#postFour{
-    left: 60%;
-    top: 60%;
 }
 /*****Footer*****/  
 footer {

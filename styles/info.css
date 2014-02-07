@@ -1,32 +1,4 @@
-/*****Reset*****/  
-html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,  
-pre, form, fieldset, table, th, td { margin: 0; padding: 0; } 
-
-/*****Basic Elements*****/  
-h1{
-	font: 170% verdana, serif;
-	color: #444444;
-}
-h3{
-	font: 130% verdana, serif;
-	color: #444444;
-    text-align: center;
-}
-p{
-    color: #FFBBBB;
-    text-align: center;
-    font: 100% arial;
-}
-li{
-    margin-left: 40px;
-    color: #FFBBBB;
-    text-align: left;
-    font: 100% arial;
-}
 /*****Generic Classes*****/  
-/* http://jamiewilson.io/norwester/ */
-/* http://subtlepatterns.com/squairy/ */
-/* http://subtlepatterns.com/graphy/ */
 .TopNavButton{
 	width: 90px;
 	height: 30px;
@@ -50,31 +22,14 @@ li{
 .AsideNavButton {
     display: block;
 }
-.BodyHeader{
-    text-align: center;
-    font: 100% arial black;
-}
 .PostHeader{
     color: #555555;
-     font: 100% impact;
 }
 /*****Basic Layout*****/  
 body{
 background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squairy_light.png');
 }
-#wrap{
-    min-width: 700px;
-}
 /*****Header*****/  
-#topNav{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	left: 0px;
-	height: 30px;
-	background: #BF3030;
-    min-width: 450px;
-}
 .Header{
 	float: left;
     color: #FFFFFF;
@@ -91,7 +46,7 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 	left: 20px;
     bottom: 50px;
     min-height: 360px;
-    min-width: 660px;
+    min-width: 300px;
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
@@ -99,12 +54,17 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
     position: absolute;
     width: 100%;
     height: 80%;
+    left: 0px;
 }
 #postOne{
     top: 5%;
-    left: 10%;
-    right: 10%;
+    left: 5%;
+    right: 5%;
     bottom: 0%;
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    overflow: auto;
 }
 #postOne ul{
     text-align: center;

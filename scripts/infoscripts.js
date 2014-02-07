@@ -1,16 +1,4 @@
 $(document).ready(function(){
-    $('.TopNavButton').hover(function(){
-		$(this).animate({'opacity':'0.5'}, 1);
-	});
-	$('.TopNavButton').mouseleave(function(){
-		$(this).animate({'opacity':'1'}, 1);
-	});
-    $('.BodyContent').hover(function(){
-		$(this).animate({'opacity':'0.5'}, 1);
-	});
-	$('.BodyContent').mouseleave(function(){
-		$(this).animate({'opacity':'1'}, 1);
-	});
     function checkWindowSize() {
         
         
