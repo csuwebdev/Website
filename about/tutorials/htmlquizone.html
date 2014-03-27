@@ -1,0 +1,84 @@
+<?php
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
+ 
+sec_session_start();
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chico State Web Development Club - Tutorials</title>
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="../../scripts/jquery.fittext.js"></script>
+		<script src="../../scripts/infoscripts.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/info.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div id="topNav">
+					<h1 id="topHeader" class="Header">CSUCWDC</h1>
+					<a href="../../index.php" class="topLink">
+                        <div id="navOne" class="TopNavButton">
+                            <h3 class="NavHeader">Home</h3>
+                        </div>
+                    </a>
+                    <a href="../about.html" class="topLink">
+                        <div id="navFive" class="TopNavButton">
+                            <h3 class="NavHeader">About</h3>
+                        </div>
+                    </a>
+                    <a href="../contact.html" class="topLink">
+                        <div id="navSix" class="TopNavButton">
+                            <h3 class="NavHeader">Contact</h3>
+                        </div>
+                    </a>
+				</div>               
+			</header>
+			<section id="body">
+				
+				<div id="contentContainer" style="height: 100%; bottom: 50px;">
+				<div id="postOne" class="BodyContent" style="padding: 5px; width: 900px; margin: 0 auto; top: 70px; background: transparent; border: 2px solid gray;">
+				<h3 style="font-size: 190%;">Beginners HTML</h3>
+					<form method="POST" action="processQuizOne.php">
+						Your name<br>
+						<input type="text" name="name"><br>
+						What is the first thing at the top of every html document<br>
+						<input type="text" name="top"><br>
+						Describe what the document tree is<br>
+						<textarea rows="4" cols="100" name="tree"></textarea><br>
+						What can you expect to find in the head<br>
+						<textarea rows="4" cols="100" name="head"></textarea><br>
+						Explain the difference between an inline and a block element<br>
+						<textarea rows="4" cols="100" name="display"></textarea><br>
+						Define an HTML attribute<br>
+						<textarea rows="4" cols="100" name="attribute"></textarea><br>
+						Write empty tags for images, headers, paragraphs, lists, images, and anchors<br>
+						<textarea rows="4" cols="100" name="tags"></textarea><br>
+						What attributes always go with images<br>
+						<textarea rows="4" cols="100" name="src"></textarea><br>
+						What attribute always go with hrefs<br>
+						<textarea rows="4" cols="100" name="href"></textarea><br>
+						What is the difference between class and id<br>
+						<textarea rows="4" cols="100" name="classid"></textarea><br>
+						What do you use a div for?<br>
+						<textarea rows="4" cols="100" name="divs"></textarea><br>
+						What are the semantic elements and why are they important?<br>
+						<textarea rows="4" cols="100" name="semantics"></textarea><br>
+						Explain what the purpose of a web browser<br>
+						<textarea rows="4" cols="100" name="browser"></textarea><br>
+						<input type="submit">
+					</form>
+					<footer>			
+				<h1 class="Header">Email CsuWebDev@Gmail.com for questions</h1>
+				<div id="contactInfo">
+				</div>
+			</footer>
+			</body>
+</html>

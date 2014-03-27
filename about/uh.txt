@@ -1,0 +1,12 @@
+<?php
+	$name=($_POST['name']);
+	$email=($_POST['email']);
+	$username=($_POST['username']);
+	$pwd=($_POST['pwd']);
+	$pwdconfirm=($_POST['pwdconfirm']);
+	$conn = mysql_connect("localhost","root","") or die ('Error: ' . mysql_error());
+	mysql_select_db("csuwebdev", $conn) or die (mysql_error());
+	$dbh =  new PDO('mysql:host=localhost;dbname=csuwebdev', 'root', '');
+	$stmt = $dbh->prepare("INSERT INTO quizone (name, top, tree, head, display, attribute, tags, src, href, classid, divs, semantics, browser) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+	$stmt->execute(array($name, $top, $tree, $head, $display,$attribute,$tags,$src,$href,$classid,$divs,$semantics,$browser,)); 
+?>

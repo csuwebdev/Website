@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+	$('#loginButton').click(function(){
+		$('#loginForm').fadeToggle();
+		$('#loginButton').fadeToggle();
+		$('#logoutmessage').hide();
+		$('#registerButton').fadeToggle();
+	});
+	
     function checkWindowSize() {
         
         if ( $(window).width() < 500 ) {

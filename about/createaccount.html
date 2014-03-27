@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chico State Web Development Club - Tutorials</title>
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="scripts/jquery.fittext.js"></script>
+		<script src="../scripts/infoscripts.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div id="topNav">
+					<h1 id="topHeader" class="Header">CSUCWDC</h1>
+					<a href="../../index.php" class="topLink">
+                        <div id="navOne" class="TopNavButton">
+                            <h3 class="NavHeader">Home</h3>
+                        </div>
+                    </a>
+                    <a href="../about.html" class="topLink">
+                        <div id="navFive" class="TopNavButton">
+                            <h3 class="NavHeader">About</h3>
+                        </div>
+                    </a>
+                    <a href="../contact.html" class="topLink">
+                        <div id="navSix" class="TopNavButton">
+                            <h3 class="NavHeader">Contact</h3>
+                        </div>
+                    </a>
+				</div>               
+			</header>
+			<section id="body">
+				<h1>Create an account</h1>
+					<form method="POST" action="createaccount.php">
+						Your name<br>
+						<input type="text" name="name"><br>
+						Your email<br>
+						<input type="email" name="email"><br>
+						Desired username<br>
+						<input type="text" name="username"><br><br>
+						Desired password<br>
+						<input type="password" name="pwd"><br>
+						Confirm password<br>
+						<input type="password" name="pwdconfirm"><br>
+						<input type="submit">
+					</form>
+			</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chico State Web Development Club - Tutorials</title>
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="scripts/jquery.fittext.js"></script>
+		<script src="../scripts/infoscripts.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div id="topNav">
+					<h1 id="topHeader" class="Header">CSUCWDC</h1>
+					<a href="../../index.html" class="topLink">
+                        <div id="navOne" class="TopNavButton">
+                            <h3 class="NavHeader">Home</h3>
+                        </div>
+                    </a>
+                    <a href="../about.html" class="topLink">
+                        <div id="navFive" class="TopNavButton">
+                            <h3 class="NavHeader">About</h3>
+                        </div>
+                    </a>
+                    <a href="../contact.html" class="topLink">
+                        <div id="navSix" class="TopNavButton">
+                            <h3 class="NavHeader">Contact</h3>
+                        </div>
+                    </a>
+				</div>               
+			</header>
+			<section id="body">
+				<h1>Website Draft</h1>
+					<form method="POST" action="processDraft.php">
+						Your name<br>
+						<input type="text" name="name"><br>
+						Name of website<br>
+						<input type="text" name="sitename"><br>
+						The pages that will comprise the website and a brief description of each. A minimum of 4 is required (Home, About, Contact, and Resume)<br>
+						<textarea rows="4" cols="100" name="pages"></textarea><br>
+						What colors might you use for the background, content background, header text, and paragraph text?<br>
+						<textarea rows="4" cols="100" name="colors"></textarea><br>
+						What will the navigation buttons look like, and where will they be placed?<br>
+						<textarea rows="4" cols="100" name="navigation"></textarea><br>
+						Where will you put your main content for each page?<br>
+						<textarea rows="4" cols="100" name="content"></textarea><br>
+						<input type="submit">
+					</form>
+			</body>
+</html>

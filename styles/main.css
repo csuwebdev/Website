@@ -12,21 +12,19 @@ h1{
 h3{
 	font: 130% 'Fenix', serif;
 	color: #444444;
-    text-align: center;
 }
 h4{
     font: 100% 'Fenix', serif;
 	color: #444444;
-    text-align: center;
 }
 p{
-    color: #FFBBBB;
+    color: #DD9999;
     text-align: center;
     font: 100% arial;
 }
 li{
     margin-left: 40px;
-    color: #FFBBBB;
+    color: #DD9999;
     text-align: left;
     font: 100% arial;
 }
@@ -37,12 +35,7 @@ a{
     font-weight: bold;
     font-size: 120%;
 }
-a:hover{
-    color: #AAAAAA;
-}
-a:active{
-    color: #000000;
-}
+
 /*****Generic Classes*****/  
 .TopNavButton{
 	width: 90px;
@@ -50,10 +43,12 @@ a:active{
 	float: right;
 	margin: 5px 0px 0px 0px;
 }
+
 .NavHeader{
     color: #FFFFFF;
     font-size: 15px;
     font-family: Verdana;
+    text-align: center;
 }
 .BodyContent {
     box-sizing: border-box;
@@ -80,6 +75,7 @@ a:active{
     color: #555555;
     font-family: 'Fenix', serif;
 }
+
 /*****Basic Layout*****/  
 body{
 background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squairy_light.png');
@@ -114,15 +110,37 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
     left: 0;
     font: 130% impact;
 }
+.Login{
+	position: absolute;
+	left: 100px;
+	color: white;
+	font-family: 'Fenix', serif;
+}
+.Login a{
+	position: static;
+	color: #555;
+	font-size: medium;
+}
+.Login button{
+	
+	position: static;
+	color: #555;
+	border-radius: 3px;
+	border: none;
+}
+.hidden{
+	display: none;
+}
 /*****Content*****/  
 #body{
     position: absolute;
-	top: 70px;
+	top: 50px;
     right: 20px;
 	left: 20px;
     bottom: 50px;
     min-height: 360px;
     min-width: 350px;
+	font-size: medium;
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
@@ -163,4 +181,35 @@ footer {
 	width: 300px;
 	background: #BF3030;
 	color: #FFFFFF;
+}
+
+#leftAside{
+	position: absolute;
+	left: 5%;
+	top: 70px;
+	bottom: 100px;
+	width: 20%;
+    min-width: 100px;
+    min-height: 300px;
+	background: #DDDDDD;	
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    overflow: auto;
+    padding: 5px;
+}
+#leftAside li{
+    color: #222222;
+    font-size: 80%;
+    margin-left: 10px; 
+    list-style: none;
+}
+.Tutorial li, .Tutorial p{
+	font-size: medium;
+	color: #222222;
+}
+a:hover{
+    color: #AAAAAA;
+}
+a:active{
+    color: #000000;
 }
