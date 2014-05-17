@@ -1,6 +1,6 @@
 <?php
-include_once 'db_connect.php';
-include_once 'functions.php';
+include_once '../includes/db_connect.php';
+include_once '../includes/functions.php';
  
 sec_session_start();
  
@@ -13,7 +13,7 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chico State Web Development Club - Home</title>
+		<title>Chico State Web Development Club - Contact</title>
 		<meta charset="UTF-8">
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -28,39 +28,39 @@ if (login_check($mysqli) == true) {
 	</head>
 	<body>
 		<div id="wrap">
-			<header  id="topNav">
+			<header id="topNav">
 				<h1 id="topHeader" class="Header">CSUCWDC</h1>
 				<a href="../index.php" class="topLink">
 					<div id="navOne" class="TopNavButton">
 						<h3 class="NavHeader">Home</h3>
 					</div>
 				</a>
-				<a href="../about/about.php" class="topLink">
+				<a href="about.php" class="topLink">
 					<div id="navTwo" class="TopNavButton">
 						<h3 class="NavHeader">About</h3>
 					</div>
 				</a>
-				<a href="../about/contact.php" class="topLink">
+				<a href="contact.php" class="topLink">
 					<div id="navThree" class="TopNavButton">
-						<h3  class="NavHeader">Contact</h3>
+						<h3  id="activeHeader" class="NavHeader">Contact</h3>
 					</div>
 				</a>
-				<a href="../about/tutorials.php" class="topLink">
+				<a href="tutorials.php" class="topLink">
 					<div id="navFour" class="TopNavButton">
 						<h3 class="NavHeader">Tutorials</h3>
 					</div>
 				</a>
-				<a href="../about/members.php" class="topLink">
+				<a href="members.php" class="topLink">
 						<div id="navSeven" class="TopNavButton">
 							<h3 class="NavHeader">Members</h3>
 						</div>
 				</a>
-				<a href="../about/news.php" class="topLink">
+				<a href="news.php" class="topLink">
 					<div id="navFive" class="TopNavButton">
 						<h3 class="NavHeader">News</h3>
 					</div>
-				</a>
-				<a href="../about/schedule.php" class="topLink">
+				</a>      
+				<a href="schedule.php" class="topLink">
 					<div id="navSix" class="TopNavButton">
 						<h3 class="NavHeader">Schedule</h3>
 					</div>
@@ -68,10 +68,11 @@ if (login_check($mysqli) == true) {
 			</header>
 			<section id="body">
         
-		<h1 class="BodyHeader"> View Account</h1>
+		<h1 id="bodyHeader"> Contact</h1>
 		<div id="contentContainer">
-				<div id="bodyPost" class="BodyContent" style="width: 500px; height: 280px; margin: 0 auto; padding-top: 20px;">
-				   
+				<div id="bodyPost" class="BodyContent">
+				   <h3>President: Erik Mellum mellum.erik@gmail.com</h3>
+				   <h3>Vice President: Jayd Saucedo saurdo@gmail.com</h3>
 
 				</div>
 		</div>
@@ -84,13 +85,13 @@ if (login_check($mysqli) == true) {
 				<?php if (login_check($mysqli) == true) : ?>
 					
 					<span class="Login">	
-					<form id="loginForm" method="_POST" action="logout.php" name="logout_form">
+					<form id="loginForm" method="_POST" action="../includes/logout.php" name="logout_form">
 						<input type="submit" value="Logout" id="logoutButton">
-						<?php echo '<input type="hidden" value=" ' . $_SERVER["REQUEST_URI"] . ' "name="url">'?>
+						<?php echo '<input type="hidden"  value="'.$_SERVER["REQUEST_URI"].'"name="url">'?>
 					</form>
-					<a href="editaccount.php"><button class="Login">Edit Account</button>
-					<a href="viewaccount.php"><button class="Login">View Account</button></a>
-					<span class="Login" style="margin-left: 10px;">Logged in as <?php echo htmlentities($_SESSION['username']); ?>!</span>
+					<a href="../includes/editaccount.php"><button class="Login">Edit Account</button>
+					<a href="../includes/viewaccount.php"><button class="Login">View Account</button></a>
+					<span  class="Login" style="margin-right: 10px;">Logged in as <?php echo htmlentities($_SESSION['username']); ?>!</span>
 					</span>
 				<?php else : ?>
 					<span class="Login">
@@ -102,16 +103,16 @@ if (login_check($mysqli) == true) {
 					}
 					?>
 					</span>
-					<form id="loginForm" class="hidden" action="process_login.php" method="post" name="login_form">                      
+					<form id="loginForm" class="hidden" action="../includes/process_login.php" method="post" name="login_form">                      
 						Email: <input type="text" name="email" />
 						Password: <input type="password" name="password" id="password"/>
 						<input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
-						<?php echo '<input type="hidden" value=" ' . $_SERVER["REQUEST_URI"] . ' "name="url">'?>
+						<?php echo '<input type="hidden"  value="'.$_SERVER["REQUEST_URI"].'"name="url">'?>
 					</form>
 					
 				<?php endif; ?>
 				<?php
-				if (isset($_GET['error'])) {
+				if (isset($_GET['error']) && login_check($mysqli) == false) {
 					echo '<span id="logoutmessage" class="Login">Error Logging In!</span>';
 				}
 				

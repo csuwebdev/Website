@@ -9,22 +9,15 @@
     color: #FFFFFF;
     font-size: 15px;
 }
-.BodyContent {
-    min-width: 125px;
-    min-height: 125px;
-	position: absolute;
-	background: #CF4242;
-    overflow: auto;
-    text-align: center;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    
-}
 .AsideNavButton {
     display: block;
 }
 .PostHeader{
     color: #555555;
+	
+}
+#projectHeader{
+	text-align: center;
 }
 /*****Basic Layout*****/  
 body{
@@ -42,7 +35,7 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 /*****Content*****/  
 #body{
     position: absolute;
-	top: 70px;
+	top: 40px;
     right: 20px;
 	left: 20px;
     bottom: 50px;
@@ -51,25 +44,23 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
-#contentContainer{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    left: 0px;
-}
-#postOne{
-    top: 5%;
-    left: 5%;
-    right: 5%;
-    bottom: 0%;
-    width: 90%;
-    height: 90%;
-    padding: 5px;
-    overflow: auto;
-}
+
 #postOne ul{
     text-align: center;
     list-style-position: inside;
+}
+#postOne ul li{
+    font-size: 120%;
+}
+
+#contentContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+	right: 0%;
+    overflow: auto;
+	min-height: 500px;
 }
 /*****Footer*****/  
 footer {

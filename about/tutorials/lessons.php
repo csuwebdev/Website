@@ -13,7 +13,7 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chico State Web Development Club - Basic HTML</title>
+		<title>Chico State Web Development Club - Lessons</title>
 		<meta charset="UTF-8">
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -25,10 +25,11 @@ if (login_check($mysqli) == true) {
         <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/info.css">
 	</head>
 	<body>
 		<div id="wrap">
-			<header  id="topNav">
+			<header id="topNav">
 				<h1 id="topHeader" class="Header">CSUCWDC</h1>
 				<a href="../../index.php" class="topLink">
 					<div id="navOne" class="TopNavButton">
@@ -67,30 +68,22 @@ if (login_check($mysqli) == true) {
 				</a>               
 			</header>
 			<section id="body">
-				<div id="quizzes">
-					<h3 style="font-size: 190%;">Basic HTML</h3>
-					You must create a web page that includes:
-					<ul class="Tutorial">
-						<li>A head and a body with a title</li>
-						<li>At least three semantic divs. One for the header, one for the body, and one for the footer.</li>
-						<li>The header div should contain at least 3 anchor tags to additional pages</li>
-						<li>You must use at least two header tags h1 - h6</li>
-						<li>You must use at least one p tag, one ul tag, one img tag</li>
-						<li>Content for your page</li>
-						<li>Every element should have a class or an id attribute</li>
-					</ul>
-					<a href="exampletemplate.html">Example</a>
-					<form method="POST" action="basichtmlquiz.php" enctype="multipart/form-data" >
-					Enter your name <br><input type="text" name="name">
-					<br>Upload your html file <input type="file" name="filename"><br>
-					<?php echo '<input type="hidden"  value="'.$_SERVER["REQUEST_URI"].'"name="url">'?>
-					<input type="submit">
-					</form>
-					<?php
-					if (isset($_GET['process'])) {
-						echo '<h3>Submission Received!</h3>';
-					}
-					?>
+				<div id="contentContainer">
+					<h1 class="BodyHeader">Quizzes</h1>
+						<div id="bodyPost" class="BodyContent" style="top: 70px;">
+							<h3 style="text-align: left; padding-left: 10px; font-size: 190%;">Knowledge Testers</h3>
+							<ul class="Tutorial">
+								<li><a href="htmlquizone.php">Basic HTML</a></li>
+								<li><a>Basic CSS</a></li>
+								<li><a>Basic Javascript</a></li>
+								<li><a>Basic PHP</a></li>
+								<li><a>Basic Jquery</a></li>
+								<li><a href="flexfoundationquiz.php">Flex + Foundation</a></li>
+								<li><a>Advanced HTML</a></li>
+								<li><a>Advanced CSS</a></li>
+								<li><a>Advanced PHP</a></li>
+							</ul>
+						</div>
 				</div>
 			</section>
 			<footer>			
@@ -132,6 +125,5 @@ if (login_check($mysqli) == true) {
 				
 				?> 
 			</footer>
-		</div>
-	</body>
+			</body>
 </html>

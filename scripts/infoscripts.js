@@ -1,22 +1,20 @@
 $(document).ready(function(){
 	$('#loginButton').click(function(){
 		$('#loginForm').fadeToggle();
-		$('#loginButton').fadeToggle();
+		$('#loginButton').toggle();
 		$('#logoutmessage').hide();
-		$('#registerButton').fadeToggle();
+		$('#registerButton').toggle();
 	});
 	
     function checkWindowSize() {
         
         
         if ( $(window).width() < 500 ) {
-            $('#topHeader').hide();
             $('.BodyHeader').fitText(3.1);
             $('.PostHeader').fitText(2);
             $('ul').fitText(3);
         }
         else {
-            $('#topHeader').show();
             $('.BodyHeader').fitText(3.1);
             $('.PostHeader').fitText(2);
             $('ul').fitText(4);

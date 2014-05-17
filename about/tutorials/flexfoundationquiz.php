@@ -13,7 +13,7 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chico State Web Development Club - Basic HTML</title>
+		<title>Chico State Web Development Club - Quiz One</title>
 		<meta charset="UTF-8">
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -25,10 +25,11 @@ if (login_check($mysqli) == true) {
         <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/info.css">
 	</head>
 	<body>
 		<div id="wrap">
-			<header  id="topNav">
+			<header id="topNav">
 				<h1 id="topHeader" class="Header">CSUCWDC</h1>
 				<a href="../../index.php" class="topLink">
 					<div id="navOne" class="TopNavButton">
@@ -64,27 +65,32 @@ if (login_check($mysqli) == true) {
 					<div id="navSix" class="TopNavButton">
 						<h3 class="NavHeader">Schedule</h3>
 					</div>
-				</a>               
+				</a>          
 			</header>
 			<section id="body">
 				<div id="quizzes">
-					<h3 style="font-size: 190%;">Basic HTML</h3>
-					You must create a web page that includes:
-					<ul class="Tutorial">
-						<li>A head and a body with a title</li>
-						<li>At least three semantic divs. One for the header, one for the body, and one for the footer.</li>
-						<li>The header div should contain at least 3 anchor tags to additional pages</li>
-						<li>You must use at least two header tags h1 - h6</li>
-						<li>You must use at least one p tag, one ul tag, one img tag</li>
-						<li>Content for your page</li>
-						<li>Every element should have a class or an id attribute</li>
-					</ul>
-					<a href="exampletemplate.html">Example</a>
-					<form method="POST" action="basichtmlquiz.php" enctype="multipart/form-data" >
-					Enter your name <br><input type="text" name="name">
-					<br>Upload your html file <input type="file" name="filename"><br>
-					<?php echo '<input type="hidden"  value="'.$_SERVER["REQUEST_URI"].'"name="url">'?>
-					<input type="submit">
+				<h3 style="font-size: 190%;">Foundation Grid and Flexbox</h3>
+					<form method="POST" action="processFlexFoundation.php">
+						Your name<br>
+						<input type="text" name="name"><br>
+						What is the class name for each row?<br>
+						<input type="text" name="top"><br>
+						What are the small, medium, and large classes used for?<br>
+						<input type="text" name="top"><br>
+						How many columns are in a foundation grid?<br>
+						<input type="text" name="top"><br>
+						How would you set the height to be the same for every column in the grid row?<br>
+						<textarea rows="4" cols="60" name="tree"></textarea><br>
+						What is the purpose of flexbox?<br>
+						<textarea rows="4" cols="60" name="head"></textarea><br>
+					    What is the display attribute for flex? <br>
+						<textarea rows="4" cols="60" name="display"></textarea><br>
+						How do you create a flex box that has equal space between each flex item?<br>
+						<textarea rows="4" cols="60" name="attribute"></textarea><br>
+						Where do you go to look up flexbox css and html?<br>
+						<textarea rows="4" cols="60" name="tags"></textarea><br>
+						<?php echo '<input type="hidden"  value="'.$_SERVER["REQUEST_URI"].'"name="url">'?>
+						<input type="submit" value="Submit">
 					</form>
 					<?php
 					if (isset($_GET['process'])) {
@@ -132,6 +138,5 @@ if (login_check($mysqli) == true) {
 				
 				?> 
 			</footer>
-		</div>
-	</body>
+		</body>
 </html>

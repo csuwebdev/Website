@@ -2,9 +2,9 @@
 /**
  * These are the database login details
  */  
-define("HOST", "localhost");     // The host you want to connect to.
-define("USER", "root");    // The database username. 
-define("PASSWORD", "");    // The database password. 
+define("HOST", "mysql.csuwebdev.com");     // The host you want to connect to.
+define("USER", "csuwebdev");    // The database username. 
+define("PASSWORD", "siht1drow#ssap");    // The database password. 
 define("DATABASE", "csuwebdev");    // The database name.
  
 define("CAN_REGISTER", "any");

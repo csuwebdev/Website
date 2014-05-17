@@ -64,6 +64,9 @@ a{
     border-radius: 15px;
     padding: 5px;
 }
+.BodyContent p{
+	font-size: 130%;
+}
 .AsideNavButton {
     display: block;
 }
@@ -100,7 +103,7 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 	left: 0px;
 	height: 30px;
 	background: #BF3030;
-    min-width: 550px;
+    min-width: 750px;
 }
 .Header{
 	float: left;
@@ -111,8 +114,10 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
     font: 130% impact;
 }
 .Login{
-	position: absolute;
-	left: 100px;
+	float: right;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-left: 10px;
 	color: white;
 	font-family: 'Fenix', serif;
 }
@@ -121,25 +126,50 @@ background-image:url('https://dl.dropboxusercontent.com/s/k6xatwr9a08xues/squair
 	color: #555;
 	font-size: medium;
 }
-.Login button{
+.Login button, #logoutButton{
 	
 	position: static;
+	margin-right: 10px;
+	margin-left: 10px;
 	color: #555;
 	border-radius: 3px;
+	font-family: 'Fenix', serif;
 	border: none;
+}
+#loginForm{
+	float: right;
+	color: white;
+}
+#quizzes{
+	position: absolute;
+	padding: 5px;
+	left: 5%;
+	right: 5%;
+	top: 70px; 
+	background: transparent; 
+	text-align: center;
+	min-width: 550px;
+	border: 2px solid gray;
 }
 .hidden{
 	display: none;
 }
 /*****Content*****/  
+#container{
+	position: absolute;
+	height: 500px;
+	width: 100%;
+	min-width: 1000px;
+	top: 20px;
+}
 #body{
     position: absolute;
 	top: 50px;
     right: 20px;
 	left: 20px;
     bottom: 50px;
-    min-height: 360px;
-    min-width: 350px;
+    min-height: 380px;
+    min-width: 480px;
 	font-size: medium;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -174,6 +204,7 @@ footer {
 	left: 0px;
 	right: 0px;
 	height: 30px;
+	min-width: 650px;
 	background: #BF3030;
 }
 #contactInfo{
@@ -212,4 +243,44 @@ a:hover{
 }
 a:active{
     color: #000000;
+}
+#bodyPost{
+	left: 10%;
+	right: 10%;
+	top: 4%;
+	width: 80%;
+	height: 80%;
+	min-width: 500px;
+}
+#bodyHeader{
+	min-width: 600px;
+	text-align: center;
+	font-size: 250%;
+}
+#activeHeader{
+	color: black;
+	font-weight: bold;
+}
+.Members{
+	background: #CCCCCC;
+	margin: 5px 0px;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 5px;
+}
+.buttons{
+	position: static;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #555;
+	border-radius: 3px;
+	font-family: 'Fenix', serif;
+	border: none;
+}
+#updated{
+	font-family: 'Fenix', serif;
+	margin-top: 5px;
+	margin-right: 10px;
+	float: right;
+	color: white;
 }

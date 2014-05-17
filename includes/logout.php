@@ -18,4 +18,5 @@ setcookie(session_name(),
  
 // Destroy session 
 session_destroy();
-header('Location: ../index.php?logout=1');
+header('Location: '. $_GET['url']);
+die;

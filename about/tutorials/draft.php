@@ -13,7 +13,7 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chico State Web Development Club - Basic CSS</title>
+		<title>Chico State Web Development Club - Website Draft</title>
 		<meta charset="UTF-8">
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -27,7 +27,7 @@ if (login_check($mysqli) == true) {
         <link rel="stylesheet" type="text/css" href="../../styles/main.css">
 	</head>
 	<body>
-		<div id="wrap" >
+		<div id="wrap">
 			<header  id="topNav">
 				<h1 id="topHeader" class="Header">CSUCWDC</h1>
 				<a href="../../index.php" class="topLink">
@@ -68,24 +68,22 @@ if (login_check($mysqli) == true) {
 			</header>
 			<section id="body">
 				<div id="quizzes">
-					<h3 style="font-size: 190%;">Adding some style with CSS</h3>
-					You must create a stylesheet for your webpage that uses the rules below in any way you see fit<br><br>
-						Include the code in your html to link the stylesheet to it and see the results<br>
-						Use a reset selector at the top and use box-sizing border box for all elements<br>
-						Use at least one selector, child selector, id selector, and class selector<br>
-						Use the background, margins, padding, border rules<br>
-						Set the font size, font family, and include one external font from google fonts<br>
-						Use the display attribute, border radius, margin 0 auto, and text align-center rules<br>
-						Use the width, height, min width, max height etc. rules<br>
-						Use pseudo selectors to change the colors of hovers, actives, and focus on an element<br>
-					</ul>
-					<a href="examplecss.html">Example</a>
-					<form method="POST" action="basiccssquiz.php" enctype="multipart/form-data" >
-						Enter your name <br><input type="text" name="name">
-						<br>Upload your html file <input type="file" name="html">
-						<br>Upload your css file <input type="file" name="css"><br>
-						<input type="submit">
+					<h3 style="font-size: 190%;">Website Draft</h3>
+					<form method="POST" action="processDraft.php">
+						Your name<br>
+						<input type="text" name="name"><br>
+						Name of website<br>
+						<input type="text" name="sitename"><br>
+						The pages that will comprise the website and a brief description of each<br>
+						<textarea rows="4" cols="60" name="pages"></textarea><br>
+						What colors might you use for the pagebackground, content background, header text, and paragraph text?<br>
+						<textarea rows="4" cols="60" name="colors"></textarea><br>
+						What will the navigation buttons look like, and where will they be placed?<br>
+						<textarea rows="4" cols="60" name="navigation"></textarea><br>
+						Where will you put your main content for each page?<br>
+						<textarea rows="4" cols="60" name="content"></textarea><br>
 						<?php echo '<input type="hidden"  value="'.$_SERVER["REQUEST_URI"].'"name="url">'?>
+						<input type="submit">
 					</form>
 					<?php
 					if (isset($_GET['process'])) {
@@ -133,5 +131,7 @@ if (login_check($mysqli) == true) {
 			
 			?> 
 		</footer>
+					
 	</body>
+			
 </html>

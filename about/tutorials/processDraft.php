@@ -10,5 +10,5 @@
 	$dbh =  new PDO('mysql:host=localhost;dbname=csuwebdev', 'root', '');
 	$stmt = $dbh->prepare("INSERT INTO draft (name, sitename,pages,colors,navigation, content) VALUES(?,?,?,?,?,?)");
 	$stmt->execute(array($name,$sitename,$pages,$color,$navigation, $content)); 
-	echo "Submission received...";
+	header('Location: '. $_POST['url'] . '?process=1');
  ?>

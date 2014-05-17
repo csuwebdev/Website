@@ -17,4 +17,5 @@
 	$dbh =  new PDO('mysql:host=localhost;dbname=csuwebdev', 'root', '');
 	$stmt = $dbh->prepare("INSERT INTO quizone (name, top, tree, head, display, attribute, tags, src, href, classid, divs, semantics, browser) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
 	$stmt->execute(array($name, $top, $tree, $head, $display,$attribute,$tags,$src,$href,$classid,$divs,$semantics,$browser,)); 
+	header('Location: '. $_POST['url']) . '?process=1';
 ?>
